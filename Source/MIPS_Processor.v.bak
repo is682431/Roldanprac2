@@ -89,13 +89,14 @@ ControlUnit
 	.RegWrite(RegWrite_wire)
 );
 
-ProgramCounter
-(
-	.clk(clk),
-	.reset(reset),
-	.PC_4(PC_4_wire)
-	
-);
+
+
+
+
+
+
+
+
 
 
 ProgramMemory
