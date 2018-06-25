@@ -57,7 +57,6 @@ wire RegWrite_wire;
 wire Zero_wire;
 wire [2:0] ALUOp_wire;
 wire [3:0] ALUOperation_wire;
-wire [3:0] shamt_wire;
 wire [4:0] WriteRegister_wire;
 wire [31:0] MUX_PC_wire;
 wire [31:0] PC_wire;
@@ -198,8 +197,7 @@ ArithmeticLogicUnit
 	.A(ReadData1_wire),
 	.B(ReadData2OrInmmediate_wire),
 	.Zero(Zero_wire),
-	.ALUResult(ALUResult_wire),
-	.shamt(shamt_wire)
+	.ALUResult(ALUResult_wire)
 );
 
 assign ALUResultOut = ALUResult_wire;
