@@ -89,12 +89,13 @@ ControlUnit
 	.RegWrite(RegWrite_wire)
 );
 
+PC_Register
 ProgramCounter
 (
 	.clk(clk),
 	.reset(reset),
-	.PC_4(PC_4_wire)
-	
+	.NewPC(PC_4_wire),
+	.PCValue(PC_wire)
 );
 
 
